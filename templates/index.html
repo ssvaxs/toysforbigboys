@@ -1,0 +1,12 @@
+<html>
+
+<body>
+    <h3>List of commands</h3>
+    <ul>
+        {{range $i, $v := .MyList}}
+        <li><strong>{{$v.URL}}</strong> (method {{$v.Metod}}) - {{$v.Descr}}</li>
+        {{end}}
+    </ul>
+</body>
+
+</html>
